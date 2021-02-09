@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+ 
+    <!-- Propios CSS -->
+ <link href="/css/styles.css" rel="stylesheet"  crossorigin="anonymous">
 
     <title>Veterinaria</title>
   </head>
@@ -42,7 +45,13 @@
               </div>
             </div>
           </nav>
-
+          <!-- Fin nav -->
+          <div class="accion-menu">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Nuevo
+            </button>
+          </div>
         <table class="table table-striped table-hover">
             <caption>List of users</caption>
             <thead class="thead-dark">  
@@ -75,6 +84,52 @@
             </tbody>   
         </table>
     </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva Mascota</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+
+            <div class="col">
+              <select class="form-control" >
+                <option>Tipo de animal</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control"  placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+
+
+
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
