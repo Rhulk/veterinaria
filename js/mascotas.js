@@ -3,6 +3,8 @@ const listaMascotas = document.getElementById('lista-mascotas');
 const tipo = document.getElementById('tipo');
 const nombre = document.getElementById('nombre');
 const dueno = document.getElementById('dueno');
+const form = document.getElementById('form-modal');
+const btnGuardar = document.getElementById('btn-guardar');
 
 console.log(" Mascotas ");
 
@@ -35,3 +37,19 @@ function listarMascotas(){
   listaMascotas.innerHTML = htmlMascotas;
 }
 listarMascotas();
+
+function enviarDatos(evento){
+    evento.preventDefault();
+    console.log('Evento',evento);
+    const datos ={
+        tipo: tipo.value,
+        nombre: nombre.value,
+        dueno: dueno.value
+    }
+    mascotas.push(datos);
+    listarMascotas();
+}
+
+
+form.onsubmit = enviarDatos;
+btnGuardar.onclick = enviarDatos;
