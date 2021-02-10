@@ -62,25 +62,15 @@
             <thead class="thead-dark">  
               <tr>
                 <th scope="col">Id</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Dueño</th>
                 <th scope="col"> Acciones</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-info"> <i class="far fa-edit"> </i></button>
-                        <button type="button" class="btn btn-danger"> <i class="far fa-trash-alt"></i></button>
-                      </div>  
-                </td>
-              </tr>
+            <tbody id="lista-mascotas">
+              
+
 
             </tbody>   
         </table>
@@ -99,7 +89,7 @@
           <div >
 
             <div class="col">
-              <select class="form-control" >
+              <select id="tipo" class="form-control" >
                 <option>Tipo de animal</option>
                 <option>Perro</option>
                 <option>Gato</option>
@@ -111,10 +101,10 @@
           </div>
           <div class="form-row">
             <div class="col">
-              <input type="text" name="nombre" class="form-control"  placeholder="Nombre">
+              <input id="nombre" type="text" name="nombre" class="form-control"  placeholder="Nombre">
             </div>
             <div class="col">
-              <select class="form-control" >
+              <select id="dueno" class="form-control" >
                 <option>Dueño</option>
                 <option>Esteban</option>
                 <option>Julian</option>
