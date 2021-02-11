@@ -30,13 +30,13 @@ function listarMascotas(){
     <td>${mascota.dueno}</td>
     <td>
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-info editar" data-indice=${index}> <i class="far fa-edit"> </i></button>
+            <button type="button" class="btn btn-info editar" onclick=editar(${index}) data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="far fa-edit"> </i></button>
             <button type="button" class="btn btn-danger"> <i class="far fa-trash-alt"></i></button>
           </div>  
     </td>
   </tr>`).join("");
   listaMascotas.innerHTML = htmlMascotas;
-  Array.from(document.getElementsByClassName('editar')).forEach((botonEditar)=>botonEditar.onclick= editar)
+ // Array.from(document.getElementsByClassName('editar')).forEach((botonEditar)=>botonEditar.onclick= editar)
 }
 listarMascotas();
 
@@ -51,8 +51,12 @@ function enviarDatos(evento){
     mascotas.push(datos);
     listarMascotas();
 }
-function editar(evento){
-    console.log('Funcion editar');
+function editar(index){
+    btnGuardar.innerHTML='Editar';
+    console.log(mascotas[index]);
+    tipo.value = mascotas[index].tipo;
+    nombre.value = mascotas[index].nombre;
+    dueno.value = mascotas[index].dueno;
 }
 
 form.onsubmit = enviarDatos;
