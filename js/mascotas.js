@@ -11,11 +11,13 @@ console.log(" Mascotas ");
 
 let mascotas =[
     {
+        indice:"",
         tipo: "Gato",
         nombre: "mancas",
         dueno: "Esteban"
     },
     {
+        indice:"",
         tipo: "Gato",
         nombre: "mancas",
         dueno: "Esteban"
@@ -43,11 +45,28 @@ listarMascotas();
 function enviarDatos(evento){
     evento.preventDefault();
     console.log('Evento',evento);
-    const datos ={
-        tipo: tipo.value,
-        nombre: nombre.value,
-        dueno: dueno.value
+    console.log(indice.value);
+    if(indice.value !== ""){
+        console.log('indice');
+        console.log(indice.value);
+
+        
+        const datos ={
+            indice: indice.value,
+            tipo: tipo.value,
+            nombre: nombre.value,
+            dueno: dueno.value
+        }
+
+    }else{
+        const datos ={
+            indice: indice.value,
+            tipo: tipo.value,
+            nombre: nombre.value,
+            dueno: dueno.value
+        }
     }
+    console.log(datos);
     mascotas.push(datos);
     listarMascotas();
 }
@@ -57,6 +76,10 @@ function editar(index){
     tipo.value = mascotas[index].tipo;
     nombre.value = mascotas[index].nombre;
     dueno.value = mascotas[index].dueno;
+    indice.value = index;
+    //console.log(indice.value);
+
+    
 }
 
 form.onsubmit = enviarDatos;
