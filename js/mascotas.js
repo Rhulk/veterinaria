@@ -52,6 +52,7 @@ function enviarDatos(evento){
         console.log(indice.value);
 
         console.log(mascotas[indice.value]);
+        
         mascotas[indice.value].indice =indice.value;
         mascotas[indice.value].tipo =tipo.value;
         mascotas[indice.value].nombre =nombre.value;
