@@ -1,36 +1,36 @@
 
-const listaMascotas = document.getElementById('lista-mascotas');
-const tipo = document.getElementById('tipo');
+const listaVeterinarios = document.getElementById('lista-veterinarios');
+
 const nombre = document.getElementById('nombre');
-const dueno = document.getElementById('dueno');
+const apellido = document.getElementById('apellido');
+const pais = document.getElementById('pais');
 const form = document.getElementById('form-modal');
 const btnGuardar = document.getElementById('btn-guardar');
 const indice = document.getElementById('indice');
 const tituloModal = document.getElementById('exampleModalLabel');
 
-console.log(" Mascotas ");
 
-let mascotas =[
+let veterinarios =[
     {
         indice:"",
-        tipo: "Gato",
-        nombre: "mancas",
-        dueno: "Esteban"
+        nombre: "Fran",
+        apellido: "blanco",
+        pais: "España"
     },
     {
         indice:"",
-        tipo: "Gato",
-        nombre: "mancas",
-        dueno: "Esteban"
+        nombre: "Juan",
+        apellido: "Jara",
+        pais: "Francia"
     }
 ];
 
-function listarMascotas(){
-    const htmlMascotas = mascotas.map((mascota, index) => `<tr>
+function listarVeterinarios(){
+    const htmlveterinarios = veterinarios.map((veterinario, index) => `<tr>
     <th scope="row">${index}</th>
-    <td>${mascota.tipo}</td>
-    <td>${mascota.nombre}</td>
-    <td>${mascota.dueno}</td>
+    <td>${veterinario.nombre}</td>
+    <td>${veterinario.apellido}</td>
+    <td>${veterinario.pais}</td>
     <td>
         <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-info editar" onclick=editar(${index}) data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="far fa-edit"> </i></button>
@@ -38,10 +38,10 @@ function listarMascotas(){
           </div>  
     </td>
   </tr>`).join("");
-  listaMascotas.innerHTML = htmlMascotas;
+  listaVeterinarios.innerHTML = htmlveterinarios;
  // Array.from(document.getElementsByClassName('editar')).forEach((botonEditar)=>botonEditar.onclick= editar)
 }
-listarMascotas();
+listarVeterinarios();
 
 function enviarDatos(evento){
     evento.preventDefault();
@@ -51,47 +51,47 @@ function enviarDatos(evento){
         console.log('indice');
         console.log(indice.value);
 
-        console.log(mascotas[indice.value]);
+        console.log(veterinarios[indice.value]);
         
-        mascotas[indice.value].indice =indice.value;
-        mascotas[indice.value].tipo =tipo.value;
-        mascotas[indice.value].nombre =nombre.value;
-        mascotas[indice.value].dueno =dueno.value;
+        veterinarios[indice.value].indice =indice.value;
+        veterinarios[indice.value].nombre =nombre.value;
+        veterinarios[indice.value].apellido =apellido.value;
+        veterinarios[indice.value].pais =pais.value;
 
     }else{
         const datos ={
             indice: indice.value,
-            tipo: tipo.value,
             nombre: nombre.value,
-            dueno: dueno.value
+            apellido: apellido.value,
+            pais: pais.value
         }
         console.log(datos);
-        mascotas.push(datos);
+        veterinarios.push(datos);
     }
     indice.value= "";
-    tipo.value= "Tipo de animal";
-    nombre.value="";
-    dueno.value= "Dueño";
-    listarMascotas();
+    nombre.value= "";
+    apellido.value="";
+    pais.value= "Pais";
+    listarVeterinarios();
     btnGuardar.innerHTML='Guardar';
-    tituloModal.innerHTML='Nueva Mascota';
+    tituloModal.innerHTML='Nuev@ veterinari@';
 }
 function editar(index){
     btnGuardar.innerHTML='Editar';
-    tituloModal.innerHTML='Modificar datos mascota';
-    console.log(mascotas[index]);
-    tipo.value = mascotas[index].tipo;
-    nombre.value = mascotas[index].nombre;
-    dueno.value = mascotas[index].dueno;
+    tituloModal.innerHTML='Modificar datos veterinario';
+    console.log(veterinarios[index]);
+    nombre.value = veterinarios[index].nombre;
+    apellido.value = veterinarios[index].apellido;
+    pais.value = veterinarios[index].pais;
     indice.value = index;
-    document.getElementById("nombre").placeholder = "Nombre de la mascota...";
+    document.getElementById("nombre").placeholder = "Nombre del veterinario...";
     //console.log(indice.value);
 }
 function borrar(index){
     console.log(index);
-    mascotas.splice(index,1);
+    veterinarios.splice(index,1);
     console.log('Eliminado');
-    listarMascotas();
+    listarVeterinarios();
 }
 
 form.onsubmit = enviarDatos;
