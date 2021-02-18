@@ -1,5 +1,7 @@
 console.log(' fecha.js');
 const horas = document.getElementById('listaHoras');
+const fecha = document.getElementById("dp1").value;
+console.log(fecha);
 
 
 
@@ -110,6 +112,7 @@ $(document).ready(function(){
 
     loadHoras();
     function getHora(id){
+        console.log(document.getElementById("dp1").value);
         console.log(document.getElementById(id).textContent);
         clearHoras();
     }
