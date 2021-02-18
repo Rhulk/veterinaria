@@ -22,7 +22,7 @@ $(document).ready(function(){
         const htmlHoras = `
         <div class="row text-center mx-0">
         <div class="col-md-2 col-4 my-1 px-2">
-            <div class="cell py-1">9:00AM</div>
+            <div id="hora" class="cell py-1">9:00AM</div>
         </div>
         <div class="col-md-2 col-4 my-1 px-2">
             <div class="cell py-1">9:30AM</div>
