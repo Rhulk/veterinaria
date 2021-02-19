@@ -12,6 +12,7 @@ function updateValue(e) {
 }
 function cambiaDefecto(){
     console.log('input');
+    loadHoras();
 }
 
 $(document).ready(function(){
@@ -108,7 +109,7 @@ $(document).ready(function(){
         </div>
     </div>`;
     horas.innerHTML = htmlHoras;
-    
+    document.getElementById("listaHoras").className ="card-body p-3 p-sm-5";
     }
     function clearHoras(){
 
@@ -118,6 +119,7 @@ $(document).ready(function(){
         document.getElementById("listaHoras").className ="";
         //document.getElementById("listaHoras").classList.add('class');
     }
+
 
     loadHoras();
     function getHora(id){
