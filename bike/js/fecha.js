@@ -3,7 +3,16 @@ const horas = document.getElementById('listaHoras');
 const fecha = document.getElementById("dp1").value;
 console.log(fecha);
 
+const input = document.querySelector('input');
 
+input.addEventListener('change', updateValue);
+
+function updateValue(e) {
+  console.log('Change Fecha');
+}
+function cambiaDefecto(){
+    console.log('input');
+}
 
 $(document).ready(function(){
 

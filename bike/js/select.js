@@ -4,6 +4,8 @@ const test = document.form.bike.length
 const indice = document.form.bike.selectedIndex 
 
 
+
+
 console.log(indice)
 
 
