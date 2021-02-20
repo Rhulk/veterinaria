@@ -2,6 +2,21 @@
 *,*:after,*:before{
     box-sizing: border-box;
   }
+  col {
+    display: inline;
+  }
+  .caja {
+    color: rgb(5, 5, 5);
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #f6f6f8 !important;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+    margin: 2% auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+  }
   
   html{
     box-sizing: inherit;
@@ -24,7 +39,7 @@
     width: 600px;
     max-width: 100%; 
     box-sizing: border-box;
-   margin: 60px auto;
+   margin: 16px auto;
     border: 1px solid #aaa;
     box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
     border-radius: .3em;

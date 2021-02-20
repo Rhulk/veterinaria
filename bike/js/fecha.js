@@ -127,5 +127,6 @@ $(document).ready(function(){
         document.getElementById("selectHora").className= "cell-select py-1 hora-select-true";
         document.getElementById("selectHora").textContent = document.getElementById(id).textContent;
         clearHoras();
+        document.getElementById("idBike").focus();
     }
     
