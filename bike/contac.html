@@ -12,7 +12,7 @@
   
   <div id="container"></div>
   <script id="template">
-    
+      
         <div class="envelope {{ flipCard ? 'active' : '' }}">
           <div class="back paper"></div>
           <div class="content">
@@ -51,7 +51,7 @@
           <div class="front paper"></div>
         </div>
       
-    
+        <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div>
   </script>
   
 </body>

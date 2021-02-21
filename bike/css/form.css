@@ -192,7 +192,7 @@ body {
   margin-top: -1px;
 }
 @-moz-keyframes envelope-front {
-  0 {
+0%{
     top: 10em;
     z-index: 0;
   }
@@ -206,7 +206,7 @@ body {
   }
 }
 @-webkit-keyframes envelope-front {
-  0 {
+0%{
     top: 10em;
     z-index: 0;
   }
@@ -220,7 +220,7 @@ body {
   }
 }
 @-o-keyframes envelope-front {
-  0 {
+  0% {
     top: 10em;
     z-index: 0;
   }
@@ -234,7 +234,7 @@ body {
   }
 }
 @-moz-keyframes envelope-back {
-  0 {
+  0% {
     top: 0;
   }
   50% {
@@ -245,7 +245,7 @@ body {
   }
 }
 @-webkit-keyframes envelope-back {
-  0 {
+0%{
     top: 0;
   }
   50% {
@@ -256,7 +256,7 @@ body {
   }
 }
 @-o-keyframes envelope-back {
-  0 {
+0%{
     top: 0;
   }
   50% {
@@ -267,7 +267,7 @@ body {
   }
 }
 @-moz-keyframes envelope-back-before {
-  0 {
+0%{
     border-color: transparent transparent #d3d3d3 transparent;
     transform: rotateX(0deg);
     z-index: 0;
@@ -280,7 +280,7 @@ body {
   }
 }
 @-webkit-keyframes envelope-back-before {
-  0 {
+0%{
     border-color: transparent transparent #d3d3d3 transparent;
     transform: rotateX(0deg);
     z-index: 0;
@@ -293,7 +293,7 @@ body {
   }
 }
 @-o-keyframes envelope-back-before {
-  0 {
+0%{
     border-color: transparent transparent #d3d3d3 transparent;
     transform: rotateX(0deg);
     z-index: 0;
@@ -306,7 +306,7 @@ body {
   }
 }
 @-moz-keyframes envelope-front {
-  0 {
+0%{
     top: 10em;
     z-index: 0;
   }
@@ -320,7 +320,7 @@ body {
   }
 }
 @-webkit-keyframes envelope-front {
-  0 {
+0%{
     top: 10em;
     z-index: 0;
   }
@@ -334,7 +334,7 @@ body {
   }
 }
 @-o-keyframes envelope-front {
-  0 {
+0%{
     top: 10em;
     z-index: 0;
   }
@@ -348,7 +348,7 @@ body {
   }
 }
 @keyframes envelope-front {
-  0 {
+0%{
     top: 10em;
     z-index: 0;
   }
@@ -362,7 +362,7 @@ body {
   }
 }
 @-moz-keyframes envelope-back {
-  0 {
+ 0%{
     top: 0;
   }
   50% {
@@ -373,7 +373,7 @@ body {
   }
 }
 @-webkit-keyframes envelope-back {
-  0 {
+ 0%{
     top: 0;
   }
   50% {
@@ -384,7 +384,7 @@ body {
   }
 }
 @-o-keyframes envelope-back {
-  0 {
+ 0%{
     top: 0;
   }
   50% {
@@ -395,7 +395,7 @@ body {
   }
 }
 @keyframes envelope-back {
-  0 {
+ 0%{
     top: 0;
   }
   50% {
@@ -406,7 +406,7 @@ body {
   }
 }
 @-moz-keyframes envelope-back-before {
-  0 {
+ 0%{
     border-color: transparent transparent #d3d3d3 transparent;
     transform: rotateX(0deg);
     z-index: 0;
@@ -419,7 +419,7 @@ body {
   }
 }
 @-webkit-keyframes envelope-back-before {
-  0 {
+ 0%{
     border-color: transparent transparent #d3d3d3 transparent;
     transform: rotateX(0deg);
     z-index: 0;
@@ -432,7 +432,7 @@ body {
   }
 }
 @-o-keyframes envelope-back-before {
-  0 {
+ 0%{
     border-color: transparent transparent #d3d3d3 transparent;
     transform: rotateX(0deg);
     z-index: 0;
@@ -445,7 +445,7 @@ body {
   }
 }
 @keyframes envelope-back-before {
-  0 {
+0%{
     border-color: transparent transparent #d3d3d3 transparent;
     transform: rotateX(0deg);
     z-index: 0;
