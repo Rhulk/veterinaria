@@ -8,9 +8,10 @@
     <!-- Propios CSS -->
     <link href="/bike/css/fecha.css" rel="stylesheet"  crossorigin="anonymous">
     <link href="/bike/css/select.css" rel="stylesheet"  crossorigin="anonymous">
+    <link href="/bike/css/form.css" rel="stylesheet"  crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css"> <!-- Problema bajo del sobre-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
@@ -28,7 +29,7 @@
                 <form autocomplete="off">
                     <div class="card-header bg-dark">
                         <div class="mx-0 mb-0 row justify-content-sm-center justify-content-start px-1">
-                            <input onclick="cambiaDefecto()" type="text" id="dp1" class="datepicker" placeholder="Elegir Fecha" name="date" readonly>
+                            <input  onclick="cambiaDefecto()" type="text" id="dp1" class="datepicker" placeholder="Elegir Fecha" name="date" readonly>
                             <span class="fa fa-calendar"></span> 
                             <div class="col-md-2 col-4 my-1 px-2 ">
                                 <div id="selectHora" onclick="loadHoras()" class="cell-select py-1 hora-select-false">Hora</div>
@@ -67,13 +68,62 @@
     </div>
     </form>
 
+    <!-- Sobre-->
+    <div id="container"></div>
+    <script id="template">
+      <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div>
+        <div class="envelope {{ flipCard ? 'active' : '' }}">
+          <div class="back paper"></div>
+          <div class="content">
+            <div class="form-wrapper">
+              <form>
+                <div class="top-wrapper">
+                  <div class="input">
+                    <label>Name</label>
+                    <input type="text" name="name"/>
+                  </div>
+                  <div class="input">
+                    <label>Phone</label>
+                    <input type="text" name="phone"/>
+                  </div>
+                  <div class="input">
+                    <label>Email</label>
+                    <input type="text" name="_replyto"/>
+                  </div>
+                </div>
+                <div class="bottom-wrapper">
+                  <div class="input">
+                    <label>Subject</label>
+                    <input type="text" name="_subject"/>
+                  </div>
+                  <div class="input">
+                    <label>Message</label>
+                    <textarea rows="5" name="message"></textarea>
+                  </div>
+                  <div class="submit">
+                    <div class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="front paper"></div>
+        </div>
+      
+        
+  </script>
 
+  <!-- Fin sobre-->
 
 </div>
+
+    <!-- ractive -->
+    <script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script>
 
     <!-- Script Propios-->
     <script src="/bike/js/fecha.js"> </script>
     <script src="/bike/js/select.js"></script>
+    <script src="/bike/js/formulario.js"></script>
     
 </body>
 </html>

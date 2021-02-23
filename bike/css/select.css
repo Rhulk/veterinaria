@@ -2,9 +2,11 @@
 *,*:after,*:before{
     box-sizing: border-box;
   }
+  /*
   col {
     display: inline;
   }
+  */
   .caja {
     color: rgb(5, 5, 5);
     overflow-x: hidden;
@@ -17,7 +19,7 @@
     margin-right: 2%;
     text-align: center;
   }
-  
+  /*
   html{
     box-sizing: inherit;
     background: linear-gradient(to left, #E8FFF9 , #eef2f3);
@@ -27,7 +29,7 @@
     text-align: center;
     font-size: 14px;
     font-family: Verdana;
-  }
+  }*/
   .select-css {
     display: block;
     font-size: 16px;
