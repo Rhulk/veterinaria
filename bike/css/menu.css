@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
   }
+  .menu {
+    margin-bottom: -24px;
+    margin-top: -7px;
+  }
    
   /*Agregamos margenes inferiores a los parrafos*/
   p {
@@ -39,13 +43,18 @@ nav ul li a {
 }
  
 nav ul li:hover {
-  background: #3ead47;
+  background: #087711;
+  width: 180px;;
+  height: 90px;
+  font-family: fantasy;
+  font-size: 150%;
+  
 }
 
 .navbar-logo{
     display: inline-block;
     vertical-align: middle;
-    width: 70px;
+    width: 170px;
   }
   .navbar-logo img{
     display: block;
