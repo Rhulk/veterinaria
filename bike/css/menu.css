@@ -34,8 +34,8 @@ nav ul li {
 nav ul li a {
   display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
   padding: 20px;
-  color: #fff;
-  text-decoration: none;
+  color: #fff !important;
+  text-decoration: none !important;;
 }
  
 nav ul li:hover {
