@@ -7,6 +7,15 @@
     display: inline;
   }
   */
+  .in-line{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    place-content: center;
+    margin-right: -15px; 
+    margin-left: -15px;
+  }
   .caja {
     color: rgb(5, 5, 5);
     overflow-x: hidden;
@@ -38,7 +47,7 @@
     color: #444;
     line-height: 1.3;
     padding: .4em 1.4em .3em .8em;
-    width: 600px;
+    /*width: 600px;*/
     max-width: 100%; 
     box-sizing: border-box;
    margin: 16px auto;
