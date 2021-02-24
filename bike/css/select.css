@@ -1,4 +1,12 @@
-
+.titulo-bicis-disponibles {
+  text-align: center;
+  margin-top: 2%;
+}
+.titulo-datos-personales {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
 *,*:after,*:before{
     box-sizing: border-box;
   }
