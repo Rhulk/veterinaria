@@ -209,21 +209,21 @@ $(document).ready(function(){
 
         const htmlHoras = ``;
         horasInicio.innerHTML = htmlHoras;
-        console.log(document.getElementById("selectHoraInicio").className);
-        document.getElementById("selectHoraInicio").className ="";
+        
+        //document.getElementById("selectHoraInicio").className ="kike";
         //document.getElementById("listaHoras").classList.add('class');
     }
     function clearHorasHasta(){
 
         const htmlHoras = ``;
         horasHasta.innerHTML = htmlHoras;
-        console.log(document.getElementById("selectHoraInicio").className);
-        document.getElementById("selectHoraInicio").className ="";
+        
+        //document.getElementById("selectHoraHasta").className ="";
         //document.getElementById("listaHoras").classList.add('class');
     }
 
 
-    loadHorasInicio();
+    loadHorasInicio(); // para que se cargen las horas al cargar la pagina
     function getHora(id){
         //console.log(document.getElementById("dp1").value);
         document.getElementById("selectHoraInicio").className= "cell-select py-1 hora-select-true";
