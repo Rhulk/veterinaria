@@ -30,9 +30,9 @@
     height: 100%;
     background-color: #f6f6f8 !important;
     background-repeat: no-repeat;
-    padding: 0px !important;
-    margin: 2% auto;
-    margin-left: 2%;
+    padding: 2px !important;
+    margin: -10px auto;
+    margin-left: 5%;
     margin-right: 2%;
     text-align: center;
   }
