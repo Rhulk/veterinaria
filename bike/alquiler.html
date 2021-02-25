@@ -42,7 +42,15 @@
 </header>
 
 <body>
-<h1 class="titulo-fecha"> ¿Cuando quiere montar ?</h1>
+  <div class="in-line">
+
+    <div>
+      <h1 class="titulo-fecha logo-cabecera-izq"> ¿Cuando quiere montar ?</h1> 
+    </div>
+    <div>
+      <img class="titulo-fecha logo-cabecera" src="imagen/bike/cuando.png" alt="Cuando"></img>
+    </div>
+  </div>
 <div class="container-fluid px-0 px-sm-4 mx-auto">
 
     <div class="row justify-content-center mx-0">
@@ -78,8 +86,16 @@
             </div>
         </div>
     </div>
+</div>
+    <div class="in-line">
 
-    <h2 class="titulo-bicis-disponibles"> Bicis disponibles</h2>
+      <div>
+        <h1 class="titulo-bici logo-cabecera-izq-bici"> Bicis disponibles</h1> 
+      </div>
+      <div>
+        <img class="titulo-bici logo-cabecera-bici" src="imagen/bike/disponible-bike.png" alt="Cuando"></img>
+      </div>
+    </div>
     <form name="form">
       <div class="in-line">
         <div >
@@ -90,57 +106,57 @@
             </select>
         </div>
 
-      <div>
-        <select id="idTalla" name="talla" class="select-css" onchange="loadTalla()">
-            <option value="0">Talla</option>
-            <option value="1">S</option>
-            <option value="2">M</option>
-            <option value="3">L</option>
-            <option value="4">XL</option>   
-          </select>
-      </div>
-      <div>
-          <select id="idBike" name="bike" class="select-css" onchange="loadBike()">
-              <option value="0">Bici elegida</option>
-              <option value="1">Specialized TURBO LEVO COMP 29 MTB E-Bike</option>
-              <option value="2">Bike 2</option>
-              <option value="3">Bike 3</option>
-              <option value="4">Bike 4</option>   
-              <option value="5">Bike 5</option>
+        <div>
+          <select id="idTalla" name="talla" class="select-css" onchange="loadTalla()">
+              <option value="0">Talla</option>
+              <option value="1">S</option>
+              <option value="2">M</option>
+              <option value="3">L</option>
+              <option value="4">XL</option>   
             </select>
+        </div>
+        <div>
+            <select id="idBike" name="bike" class="select-css" onchange="loadBike()">
+                <option value="0">Bici elegida</option>
+                <option value="1">Specialized TURBO LEVO COMP 29 MTB E-Bike</option>
+                <option value="2">Bike 2</option>
+                <option value="3">Bike 3</option>
+                <option value="4">Bike 4</option>   
+                <option value="5">Bike 5</option>
+              </select>
+        </div>
+        <div>
+          <select id="idPedal" name="pedal" class="select-css" onchange="loadPedal()">
+              <option value="0">Tipo Pedal</option>
+              <option value="1">Normal "Plataforma"</option>
+              <option value="2">Automatico MTB "SPD Shimano"</option>
+              <option value="3">Automatico Carretera "Look"</option>
+          </select>
+        </div> 
+        <div>
+          <select id="idCasco" name="casco" class="select-css" onchange="loadCasco()">
+              <option value="0">Casco</option>
+              <option value="1">Si, necesito uno.</option>
+              <option value="2">No, ya lo tengo.</option>
+          </select>
+        </div>   
+
       </div>
-      <div>
-        <select id="idPedal" name="pedal" class="select-css" onchange="loadPedal()">
-            <option value="0">Tipo Pedal</option>
-            <option value="1">Normal "Plataforma"</option>
-            <option value="2">Automatico MTB "SPD Shimano"</option>
-            <option value="3">Automatico Carretera "Look"</option>
-        </select>
-      </div> 
-      <div>
-        <select id="idCasco" name="casco" class="select-css" onchange="loadCasco()">
-            <option value="0">Casco</option>
-            <option value="1">Si, necesito uno.</option>
-            <option value="2">No, ya lo tengo.</option>
-        </select>
-      </div>   
-
-    </div>
 
 
-    <div class="row">
-        <div class="col caja">  
-            <img style="text-align: center;" id="imgBike" src="imagen/bike/imagen0.jpg" alt="Bike" width="50%" height="50%">
-        </div>
-        <div id="infoTecnica" class="col caja">
-            <span>
-                Información tecnica de la bici.
-            </span>
-        </div>
-    </div>
+      <div class="row">
+          <div class="col caja">  
+              <img style="text-align: center;" id="imgBike" src="imagen/bike/imagen0.jpg" alt="Bike" width="50%" height="50%">
+          </div>
+          <div id="infoTecnica" class="col caja">
+              <span>
+                  Información tecnica de la bici.
+              </span>
+          </div>
+      </div>
     </form>
 
-    <h2 class="titulo-datos-personales"> Comple los datos personales</h2>
+    <h2 class="titulo-datos-personales"> Complete sus datos personales</h2>
     <!-- Sobre-->
     <div id="container"></div>
     <script id="template">

@@ -3,6 +3,29 @@
     padding-top: 123px;
     margin-bottom: -96px;
 }
+.logo-cabecera {
+    width: 9%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-left: 1%;
+}
+.logo-cabecera-izq {
+    padding-left: 10%;
+}
+
+.titulo-bici {
+    text-align: center;
+    padding-top: 12px;
+}
+.logo-cabecera-bici {
+    width: 14%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-left: 1%;
+}
+.logo-cabecera-izq-bici {
+    padding-left: 10%;
+}
 
 .hora-select-false {
     text-align: center;
