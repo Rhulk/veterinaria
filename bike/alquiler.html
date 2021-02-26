@@ -62,7 +62,7 @@
   <div class="in-line">
 
     <div>
-      <h1 class="titulo-fecha logo-cabecera-izq"> ¿Cuando quiere montar?</h1> 
+      <h1 id="id_montar" class="titulo-fecha logo-cabecera-izq"> ¿Cuando quiere montar?</h1> 
     </div>
     <div>
       <img class="titulo-fecha logo-cabecera" src="imagen/bike/cuando.png" alt="Cuando"></img>
@@ -76,7 +76,7 @@
                 <form autocomplete="off">
                     <div class="card-header bg-dark">
                         <div class="mx-0 mb-0 row justify-content-sm-center justify-content-start px-1">
-                            <input  onclick="cambiaDefectoInicio('input-inicio')" type="text" id="dp1" class="datepicker" placeholder="Elegir Fecha inicio" name="date" readonly>
+                            <input  onclick="cambiaDefectoInicio('input-inicio')" type="text" id="dp1" class="datepicker id_fecha_inicio" placeholder="Elegir Fecha inicio" name="date" readonly>
                             <span class="fa fa-calendar"></span> 
                             <div class="col-md-2 col-4 my-1 px-2 ">
                                 <div id="selectHoraInicio" onclick="loadHorasInicio()"   class="cell-select py-1 hora-select-false">Hora</div>
@@ -89,7 +89,7 @@
 
                     <div class="card-header bg-dark">
                       <div class="mx-0 mb-0 row justify-content-sm-center justify-content-start px-1">
-                          <input  onclick="cambiaDefectoInicio('input-hasta')" type="text" id="dp2" class="datepicker" placeholder="Elegir Fecha hasta" name="date" readonly>
+                          <input  onclick="cambiaDefectoInicio('input-hasta')" type="text" id="dp2" class="datepicker id_fecha_hasta" placeholder="Elegir Fecha hasta" name="date" readonly>
                           <span class="fa fa-calendar"></span> 
                           <div class="col-md-2 col-4 my-1 px-2 ">
                               <div id="selectHoraHasta" onclick="loadHorasHasta()" class="cell-select py-1 hora-select-false">Hora</div>
@@ -107,7 +107,7 @@
     <div class="in-line">
 
       <div>
-        <h1 class="titulo-bici logo-cabecera-izq-bici"> Bicis disponibles</h1> 
+        <h1 id="id_bike_disponible" class="titulo-bici logo-cabecera-izq-bici"> Bicis disponibles</h1> 
       </div>
       <div>
         <img class="titulo-bici logo-cabecera-bici" src="imagen/bike/disponible-bike.png" alt="Cuando"></img>
@@ -117,15 +117,15 @@
       <div class="in-line">
         <div >
           <select id="idLugar" name="lugar" class="select-css" onchange="loadLugar()">
-              <option value="0">Lugar recogida</option>
-              <option value="1">Los Molinos (dirección)</option>
-              <option value="2">Escorial (dirección)</option>
+              <option id="id_lugarRecogida" value="0">Lugar recogida</option>
+              <option  value="1">Los Molinos (dirección)</option>
+              <option  value="2">Escorial (dirección)</option>
             </select>
         </div>
 
         <div>
           <select id="idTalla" name="talla" class="select-css" onchange="loadTalla()">
-              <option value="0">Talla</option>
+              <option id="id_talla" value="0">Talla</option>
               <option value="1">S</option>
               <option value="2">M</option>
               <option value="3">L</option>
@@ -134,17 +134,17 @@
         </div>
         <div>
             <select id="idBike" name="bike" class="select-css" onchange="loadBike()">
-                <option value="0">Bici elegida</option>
-                <option value="1">Specialized TURBO LEVO COMP 29 MTB E-Bike</option>
-                <option value="2">Bike 2</option>
-                <option value="3">Bike 3</option>
-                <option value="4">Bike 4</option>   
-                <option value="5">Bike 5</option>
+                <option id="id_bike" value="0">Bici elegida</option>
+                <option  value="1">Specialized TURBO LEVO COMP 29 MTB E-Bike</option>
+                <option  value="2">Bike 2</option>
+                <option  value="3">Bike 3</option>
+                <option  value="4">Bike 4</option>   
+                <option  value="5">Bike 5</option>
               </select>
         </div>
         <div>
           <select id="idPedal" name="pedal" class="select-css" onchange="loadPedal()">
-              <option value="0">Tipo Pedal</option>
+              <option id="id_tipo_pedal" value="0">Tipo Pedal</option>
               <option value="1">Normal "Plataforma"</option>
               <option value="2">Automatico MTB "SPD Shimano"</option>
               <option value="3">Automatico Carretera "Look"</option>
@@ -152,9 +152,9 @@
         </div> 
         <div>
           <select id="idCasco" name="casco" class="select-css" onchange="loadCasco()">
-              <option value="0">Casco</option>
-              <option value="1">Si, necesito uno.</option>
-              <option value="2">No, ya lo tengo.</option>
+              <option id="id_casco_0" value="0">Casco</option>
+              <option id="id_casco_1" value="1">Si, necesito uno.</option>
+              <option id="id_casco_2" value="2">No, ya lo tengo.</option>
           </select>
         </div>   
 
@@ -173,7 +173,7 @@
       </div>
     </form>
 
-    <h2 class="titulo-datos-personales"> Complete sus datos personales</h2>
+    <h2 id="id_datos_personales" class="titulo-datos-personales"> Complete sus datos personales</h2>
     <!-- Sobre-->
     <div id="container"></div>
     <script id="template">
