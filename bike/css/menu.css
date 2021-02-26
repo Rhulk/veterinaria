@@ -11,18 +11,24 @@
   .idioma {
     color: #fff !important;
     margin-left: 495px;/* Buscar otra opcion*/
-
+  }
+  .idioma-activo{
+    color: #fff;
+    border: 1px solid #343232;
+    padding: 3px;
+    align-content: center;
+    margin-top: -29px;
   }
   
   .idioma:hover {
-    color: rgb(255, 255, 255) !important;
-    margin-left: 495px;/* Buscar otra opcion*/
-    background: #0c0000 !important;
-    width: 100px!important;
+   /* color: rgb(216, 15, 15) !important;
+   /* margin-left: 495px;/* Buscar otra opcion*/
+    background: #016b01 !important;
+   /* width: 100px!important;
     height: 90px!important;
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 100% !important;
-
+    font-size: 105% !important;
+*/
   }
 
   .dropdown-item-idioma {
@@ -49,6 +55,31 @@
     position: fixed;
     z-index: 100;
   }
+.nav-principal {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+.nav-principal-ul{
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+.nav-principal-ul-li{
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+.nav-principal-ul-li-a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.nav-principal-ul-li:hover {
+  background: #087711;
+  width: 180px;;
+  height: 90px;
+  font-family: fantasy;
+  font-size: 150%;
+}
+
 
 nav {
   float: left; /* Desplazamos el nav hacia la izquierda */
@@ -62,14 +93,20 @@ nav ul {
 nav ul li {
   float: left;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 16px;*/
 }
  
 nav ul li a {
   display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
   padding: 20px;
   color: #fff !important;
-  text-decoration: none !important;;
+  text-decoration: none !important;
+}
+nav dl dd a { /* idioma */
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff !important;
+  text-decoration: none !important;
 }
  
 nav ul li:hover {
@@ -100,6 +137,6 @@ nav ul li:hover {
     width: 80%;
     margin: auto;
     overflow:hidden;
-}
+}*/
 
   
