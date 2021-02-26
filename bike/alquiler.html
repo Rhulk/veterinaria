@@ -45,16 +45,16 @@
           Idioma
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item-idioma" href="#">Castellano</a>
-          <a class="dropdown-item-idioma" href="#">Ingles</a>
-          <a class="dropdown-item-idioma" href="#">Frances</a>      
-          <a class="dropdown-item-idioma" href="#">Aleman</a>
-          <a class="dropdown-item-idioma" href="#">Portugues</a>   
+          <a id="idioma_1" class="dropdown-item-idioma" href="#" onclick="getIdioma(this.id)">Castellano</a>
+          <a id="idioma_2" class="dropdown-item-idioma" href="#" onclick="getIdioma(this.id)">Ingles</a>
+          <a id="idioma_3" class="dropdown-item-idioma" href="#" onclick="getIdioma(this.id)">Frances</a>      
+          <a id="idioma_4" class="dropdown-item-idioma" href="#" onclick="getIdioma(this.id)">Aleman</a>
+          <a id="idioma_5" class="dropdown-item-idioma" href="#" onclick="getIdioma(this.id)">Portugues</a>   
         </div>
         
       </dd>
     </dl>
-    <div class="idioma-activo">  Castellano  </div>
+    <div id="mostrarIdioma" class="idioma-activo">  Castellano  </div>
 	</nav>
 
   
@@ -232,6 +232,7 @@
     <script src="/bike/js/fecha.js"> </script>
     <script src="/bike/js/select.js"></script>
     <script src="/bike/js/formulario.js"></script>
+    <script src="/bike/js/menu.js"></script>
     
 </body>
 </html>
