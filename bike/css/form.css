@@ -29,23 +29,23 @@ body {
   height: 35em;
   margin: 0 auto;
 }
-.envelope.active .content {
+.envelope.activo .content {
   padding: 15em 2em 2em;
 }
-.envelope.active .paper.front,
-.envelope.active .paper.back {
+.envelope.activo .paper.front,
+.envelope.activo .paper.back {
   animation-duration: 1.5s;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
-.envelope.active .paper.front {
+.envelope.activo .paper.front {
   animation-name: envelope-front;
 }
-.envelope.active .paper.back {
+.envelope.activo .paper.back {
   animation-name: envelope-back;
 }
-.envelope.active .paper.back:before {
+.envelope.activo .paper.back:before {
   animation-duration: 0.5s;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
@@ -53,10 +53,10 @@ body {
   animation-delay: 1.25s;
   animation-name: envelope-back-before;
 }
-.envelope.active .bottom-wrapper {
+.envelope.activo .bottom-wrapper {
   transform: rotateX(180deg);
 }
-.envelope.active .bottom-wrapper:after {
+.envelope.activo .bottom-wrapper:after {
   z-index: 0;
   opacity: 1;
 }

@@ -229,7 +229,7 @@ $(document).ready(function(){
         document.getElementById("selectHoraInicio").className= "cell-select py-1 hora-select-true";
         document.getElementById("selectHoraInicio").textContent = document.getElementById(id).textContent;
         clearHorasInicio();
-        document.getElementById("idBike").focus();
+        //document.getElementById("idBike").focus();
     }
     function getHoraHasta(id){
         //console.log(document.getElementById("dp1").value);
