@@ -43,6 +43,26 @@
     background-color: transparent;
     border: 0;
   }
+  .dropdown-item-idioma:hover {
+    color: green !important;
+    background-color: rgb(41, 39, 39) !important;
+    font-size: 115%;
+    font-family: fantasy;
+  }
+  /* ============ Solo para tamaño pantalla superior a 992 ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{
+     display: none; 
+  }
+	.navbar .nav-item:hover .dropdown-menu{
+     display: block; 
+  }
+	.navbar .nav-item .dropdown-menu{
+     margin-top:0; /* evita el espacio muerto del hovers*/
+  }
+
+}	
+/* ============ desktop view .end// ============ */
    
   /*Agregamos margenes inferiores a los parrafos*/
   p {
@@ -137,6 +157,6 @@ nav ul li:hover {
     width: 80%;
     margin: auto;
     overflow:hidden;
-}*/
+}
 
   
