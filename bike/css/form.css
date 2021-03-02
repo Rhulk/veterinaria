@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(45deg, #068502, #97f76b);
   font-family: sans-serif;
+  line-height: 1; /* para controlar el tamaño de la hoja del sobre */
 }
 
 .contact-wrapper {
