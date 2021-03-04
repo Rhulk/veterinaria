@@ -345,7 +345,7 @@
   
 
   function addDate(ev) {
-    
+    console.log(' Funcion addDate()');
   }
 
   var calendar = new Calendar('#calendar', data);
