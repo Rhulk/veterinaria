@@ -9,7 +9,7 @@ function loadIdioma(){
         setByIdioma(sessionStorage.getItem(idioma));
     }
 }
-
+//hh
 
 function getIdioma(id){
     console.log(id+' getIdioma');

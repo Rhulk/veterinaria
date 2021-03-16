@@ -223,19 +223,24 @@ $(document).ready(function(){
     }
 
 
-    loadHorasInicio(); // para que se cargen las horas al cargar la pagina
+    loadHorasInicio(); // para que se cargen las horas al cargar la pagina jjj
     function getHora(id){
-        //console.log(document.getElementById("dp1").value);
+        console.log(document.getElementById("dp1").value); // fecha inicio
         document.getElementById("selectHoraInicio").className= "cell-select py-1 hora-select-true";
         document.getElementById("selectHoraInicio").textContent = document.getElementById(id).textContent;
         clearHorasInicio();
-        //document.getElementById("idBike").focus();
+        //document.getElementById("idBike").focus();j
+
     }
     function getHoraHasta(id){
-        //console.log(document.getElementById("dp1").value);
+        console.log(document.getElementById("dp2").value); // fecha fin
         document.getElementById("selectHoraHasta").className= "cell-select py-1 hora-select-true";
         document.getElementById("selectHoraHasta").textContent = document.getElementById(id).textContent;
         clearHorasHasta();
         document.getElementById("idBike").focus();
+    }
+
+    function mostrarData(){
+        
     }
     
