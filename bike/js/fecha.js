@@ -223,7 +223,7 @@ $(document).ready(function(){
     }
 
 
-    loadHorasInicio(); // para que se cargen las horas al cargar la pagina jjjjjjjk
+    loadHorasInicio(); // para que se cargen las horas al cargar la pagina jjjjjjjkiki
     function getHora(id){
         console.log(document.getElementById("dp1").value); // fecha inicio
         document.getElementById("selectHoraInicio").className= "cell-select py-1 hora-select-true";
