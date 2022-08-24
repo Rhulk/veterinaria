@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "veterinaria",
+			"path": "..\\..\\..\\git\\veterinaria\\veterinaria\\veterinaria"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "veterinaria"
+	}
+}
